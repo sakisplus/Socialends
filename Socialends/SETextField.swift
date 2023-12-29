@@ -34,6 +34,6 @@ class SETextField: UITextField {
         backgroundColor = .tertiarySystemBackground
         autocorrectionType = .no
         
-        placeholder = "Enter a vlaue"
+        placeholder = "Enter a username"
     }
 }
