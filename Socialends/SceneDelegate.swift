@@ -16,9 +16,31 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
             window = UIWindow(frame: windowScene.coordinateSpace.bounds)
             window?.windowScene = windowScene
-            window?.rootViewController = ViewController()
+            window?.rootViewController = createTabBar()
             window?.makeKeyAndVisible()
     }
+    
+    private func createTabBar() -> UITabBarController {
+            let tabBar = UITabBarController()
+            UITabBar.appearance().tintColor = .systemGreen
+            UITabBar.appearance().backgroundColor = .systemGray
+            tabBar.viewControllers = [createSearchNC(), createFavoritesNC()]
+            return tabBar
+        }
+        
+        private func createSearchNC() -> UINavigationController {
+            let searchVC = SearchVC()
+            searchVC.title = "Search"
+            searchVC.tabBarItem = UITabBarItem(tabBarSystemItem: .search, tag: 1)
+            return UINavigationController(rootViewController: searchVC)
+        }
+        
+        private func createFavoritesNC() -> UINavigationController {
+            let favoritesVC = FavoritesVC()
+            favoritesVC.title = "Favorites"
+            favoritesVC.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 1)
+            return UINavigationController(rootViewController: favoritesVC)
+        }
 
     func sceneDidDisconnect(_ scene: UIScene) {
         // Called as the scene is being released by the system.
