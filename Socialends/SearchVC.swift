@@ -19,11 +19,28 @@ class SearchVC: UIViewController {
         configLogo()
         configUsername()
         configCTA()
+        dismissKeyboardOnTap()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.isNavigationBarHidden = true
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        navigationController?.isNavigationBarHidden = false
+    }
+    
+    func dismissKeyboardOnTap() {
+        let tap = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing))
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func pushFollowersVC() {
+        let followersVC = FollowersListVC()
+        followersVC.username = usernameTextField.text
+        followersVC.title = usernameTextField.text ?? "No user name!"
+        navigationController?.pushViewController(followersVC, animated: true)
     }
     
     func configLogo() {
@@ -41,6 +58,7 @@ class SearchVC: UIViewController {
     
     func configUsername() {
         view.addSubview(usernameTextField)
+        usernameTextField.delegate = self
         
         NSLayoutConstraint.activate([
             usernameTextField.topAnchor.constraint(equalTo: logoImageView.bottomAnchor, constant: 48),
@@ -52,6 +70,7 @@ class SearchVC: UIViewController {
     
     func configCTA() {
         view.addSubview(ctaButton)
+        ctaButton.addTarget(self, action: #selector(pushFollowersVC), for: .touchUpInside)
         
         NSLayoutConstraint.activate([
             ctaButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -50),
@@ -59,5 +78,12 @@ class SearchVC: UIViewController {
             ctaButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -50),
             ctaButton.heightAnchor.constraint(equalToConstant: 50)
         ])
+    }
+}
+
+extension SearchVC: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        pushFollowersVC()
+        return true
     }
 }

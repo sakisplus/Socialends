@@ -16,6 +16,7 @@
 		DE03A6252B3F39F800C134F8 /* FavoritesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE03A6242B3F39F800C134F8 /* FavoritesVC.swift */; };
 		DE03A6272B3F3B5100C134F8 /* SEButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE03A6262B3F3B5100C134F8 /* SEButton.swift */; };
 		DE03A6292B3F3D9300C134F8 /* SETextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE03A6282B3F3D9300C134F8 /* SETextField.swift */; };
+		DE03A62B2B3F47D100C134F8 /* FollowersListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE03A62A2B3F47D100C134F8 /* FollowersListVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		DE03A6242B3F39F800C134F8 /* FavoritesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesVC.swift; sourceTree = "<group>"; };
 		DE03A6262B3F3B5100C134F8 /* SEButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SEButton.swift; sourceTree = "<group>"; };
 		DE03A6282B3F3D9300C134F8 /* SETextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SETextField.swift; sourceTree = "<group>"; };
+		DE03A62A2B3F47D100C134F8 /* FollowersListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersListVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				DE03A6242B3F39F800C134F8 /* FavoritesVC.swift */,
 				DE03A6262B3F3B5100C134F8 /* SEButton.swift */,
 				DE03A6282B3F3D9300C134F8 /* SETextField.swift */,
+				DE03A62A2B3F47D100C134F8 /* FollowersListVC.swift */,
 			);
 			path = Socialends;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 			files = (
 				DE03A6252B3F39F800C134F8 /* FavoritesVC.swift in Sources */,
 				DE03A6232B3F39E600C134F8 /* SearchVC.swift in Sources */,
+				DE03A62B2B3F47D100C134F8 /* FollowersListVC.swift in Sources */,
 				DE03A6132B3F381300C134F8 /* ViewController.swift in Sources */,
 				DE03A6292B3F3D9300C134F8 /* SETextField.swift in Sources */,
 				DE03A6272B3F3B5100C134F8 /* SEButton.swift in Sources */,
