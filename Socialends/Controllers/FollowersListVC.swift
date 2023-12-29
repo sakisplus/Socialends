@@ -22,7 +22,7 @@ class FollowersListVC: UIViewController {
         guard let username = self.username else { return }
         NetworkManager.shared.getFollowers(for: username, page: 1) { followers, error in
             guard let followers = followers else {
-                self.presentSEAlertOnMainThread(title: "Something went wrong", message: error!, buttonTitle: "OK")
+                self.presentSEAlertOnMainThread(title: "Something went wrong", message: error!.rawValue, buttonTitle: "OK")
                 return
             }
             print("followers: \(followers.count)")
