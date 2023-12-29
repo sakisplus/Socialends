@@ -20,13 +20,14 @@ class FollowersListVC: UIViewController {
     
     private func loadFollowers() {
         guard let username = self.username else { return }
-        NetworkManager.shared.getFollowers(for: username, page: 1) { followers, error in
-            guard let followers = followers else {
-                self.presentSEAlertOnMainThread(title: "Something went wrong", message: error!.rawValue, buttonTitle: "OK")
-                return
+        NetworkManager.shared.getFollowers(for: username, page: 1) { result in
+            switch result {
+            case .failure(let error):
+                self.presentSEAlertOnMainThread(title: "Something went wrong", message: error.rawValue, buttonTitle: "OK")
+            case .success(let followers):
+                print("followers: \(followers.count)")
+                print(followers)
             }
-            print("followers: \(followers.count)")
-            print(followers)
         }
     }
 }
