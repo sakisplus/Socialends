@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		DE03A60F2B3F381300C134F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE03A60E2B3F381300C134F8 /* AppDelegate.swift */; };
 		DE03A6112B3F381300C134F8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE03A6102B3F381300C134F8 /* SceneDelegate.swift */; };
-		DE03A6132B3F381300C134F8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE03A6122B3F381300C134F8 /* ViewController.swift */; };
 		DE03A6182B3F381500C134F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE03A6172B3F381500C134F8 /* Assets.xcassets */; };
 		DE03A61B2B3F381500C134F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE03A6192B3F381500C134F8 /* LaunchScreen.storyboard */; };
 		DE03A6232B3F39E600C134F8 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE03A6222B3F39E600C134F8 /* SearchVC.swift */; };
@@ -27,7 +26,6 @@
 		DE03A60B2B3F381300C134F8 /* Socialends.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Socialends.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE03A60E2B3F381300C134F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE03A6102B3F381300C134F8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DE03A6122B3F381300C134F8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DE03A6172B3F381500C134F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE03A61A2B3F381500C134F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE03A61C2B3F381500C134F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -74,21 +72,44 @@
 			children = (
 				DE03A60E2B3F381300C134F8 /* AppDelegate.swift */,
 				DE03A6102B3F381300C134F8 /* SceneDelegate.swift */,
-				DE03A6122B3F381300C134F8 /* ViewController.swift */,
 				DE03A6172B3F381500C134F8 /* Assets.xcassets */,
 				DE03A6192B3F381500C134F8 /* LaunchScreen.storyboard */,
 				DE03A61C2B3F381500C134F8 /* Info.plist */,
+				DE03A6352B3F61E600C134F8 /* Controllers */,
+				DE03A6362B3F61FA00C134F8 /* SEUIElements */,
+				DE03A6372B3F625F00C134F8 /* Extensions */,
+			);
+			path = Socialends;
+			sourceTree = "<group>";
+		};
+		DE03A6352B3F61E600C134F8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
 				DE03A6222B3F39E600C134F8 /* SearchVC.swift */,
 				DE03A62A2B3F47D100C134F8 /* FollowersListVC.swift */,
 				DE03A6242B3F39F800C134F8 /* FavoritesVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		DE03A6362B3F61FA00C134F8 /* SEUIElements */ = {
+			isa = PBXGroup;
+			children = (
 				DE03A6262B3F3B5100C134F8 /* SEButton.swift */,
 				DE03A6282B3F3D9300C134F8 /* SETextField.swift */,
 				DE03A62C2B3F54D600C134F8 /* SETitleLabel.swift */,
 				DE03A62F2B3F571600C134F8 /* SEBodyLabel.swift */,
 				DE03A6312B3F57EE00C134F8 /* SEAlertVC.swift */,
+			);
+			path = SEUIElements;
+			sourceTree = "<group>";
+		};
+		DE03A6372B3F625F00C134F8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
 				DE03A6332B3F5F2E00C134F8 /* UIViewController+Ext.swift */,
 			);
-			path = Socialends;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,7 +187,6 @@
 				DE03A6342B3F5F2E00C134F8 /* UIViewController+Ext.swift in Sources */,
 				DE03A6322B3F57EE00C134F8 /* SEAlertVC.swift in Sources */,
 				DE03A62B2B3F47D100C134F8 /* FollowersListVC.swift in Sources */,
-				DE03A6132B3F381300C134F8 /* ViewController.swift in Sources */,
 				DE03A6302B3F571600C134F8 /* SEBodyLabel.swift in Sources */,
 				DE03A6292B3F3D9300C134F8 /* SETextField.swift in Sources */,
 				DE03A6272B3F3B5100C134F8 /* SEButton.swift in Sources */,
