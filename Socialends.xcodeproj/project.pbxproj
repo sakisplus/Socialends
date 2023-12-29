@@ -24,6 +24,8 @@
 		DE03A63C2B3F666500C134F8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE03A63B2B3F666500C134F8 /* User.swift */; };
 		DE03A63F2B3F6C5700C134F8 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE03A63E2B3F6C5700C134F8 /* NetworkManager.swift */; };
 		DE03A6422B3F74D000C134F8 /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE03A6412B3F74D000C134F8 /* ErrorMessage.swift */; };
+		DE03A6452B3F7A6300C134F8 /* FollowerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE03A6442B3F7A6300C134F8 /* FollowerCell.swift */; };
+		DE03A6472B3F7B0D00C134F8 /* SEAvatarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE03A6462B3F7B0D00C134F8 /* SEAvatarImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +48,8 @@
 		DE03A63B2B3F666500C134F8 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		DE03A63E2B3F6C5700C134F8 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		DE03A6412B3F74D000C134F8 /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
+		DE03A6442B3F7A6300C134F8 /* FollowerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerCell.swift; sourceTree = "<group>"; };
+		DE03A6462B3F7B0D00C134F8 /* SEAvatarImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SEAvatarImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,11 +110,13 @@
 		DE03A6362B3F61FA00C134F8 /* SEUIElements */ = {
 			isa = PBXGroup;
 			children = (
+				DE03A6432B3F7A3700C134F8 /* Cells */,
 				DE03A6262B3F3B5100C134F8 /* SEButton.swift */,
 				DE03A6282B3F3D9300C134F8 /* SETextField.swift */,
 				DE03A62C2B3F54D600C134F8 /* SETitleLabel.swift */,
 				DE03A62F2B3F571600C134F8 /* SEBodyLabel.swift */,
 				DE03A6312B3F57EE00C134F8 /* SEAlertVC.swift */,
+				DE03A6462B3F7B0D00C134F8 /* SEAvatarImageView.swift */,
 			);
 			path = SEUIElements;
 			sourceTree = "<group>";
@@ -146,6 +152,14 @@
 				DE03A6412B3F74D000C134F8 /* ErrorMessage.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		DE03A6432B3F7A3700C134F8 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DE03A6442B3F7A6300C134F8 /* FollowerCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,6 +239,7 @@
 				DE03A6322B3F57EE00C134F8 /* SEAlertVC.swift in Sources */,
 				DE03A62B2B3F47D100C134F8 /* FollowersListVC.swift in Sources */,
 				DE03A6302B3F571600C134F8 /* SEBodyLabel.swift in Sources */,
+				DE03A6452B3F7A6300C134F8 /* FollowerCell.swift in Sources */,
 				DE03A6292B3F3D9300C134F8 /* SETextField.swift in Sources */,
 				DE03A6422B3F74D000C134F8 /* ErrorMessage.swift in Sources */,
 				DE03A6392B3F65C800C134F8 /* Follower.swift in Sources */,
@@ -232,6 +247,7 @@
 				DE03A63F2B3F6C5700C134F8 /* NetworkManager.swift in Sources */,
 				DE03A60F2B3F381300C134F8 /* AppDelegate.swift in Sources */,
 				DE03A6112B3F381300C134F8 /* SceneDelegate.swift in Sources */,
+				DE03A6472B3F7B0D00C134F8 /* SEAvatarImageView.swift in Sources */,
 				DE03A62D2B3F54D600C134F8 /* SETitleLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
