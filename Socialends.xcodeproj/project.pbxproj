@@ -14,6 +14,8 @@
 		DE03A61B2B3F381500C134F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE03A6192B3F381500C134F8 /* LaunchScreen.storyboard */; };
 		DE03A6232B3F39E600C134F8 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE03A6222B3F39E600C134F8 /* SearchVC.swift */; };
 		DE03A6252B3F39F800C134F8 /* FavoritesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE03A6242B3F39F800C134F8 /* FavoritesVC.swift */; };
+		DE03A6272B3F3B5100C134F8 /* SEButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE03A6262B3F3B5100C134F8 /* SEButton.swift */; };
+		DE03A6292B3F3D9300C134F8 /* SETextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE03A6282B3F3D9300C134F8 /* SETextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		DE03A61C2B3F381500C134F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE03A6222B3F39E600C134F8 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 		DE03A6242B3F39F800C134F8 /* FavoritesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesVC.swift; sourceTree = "<group>"; };
+		DE03A6262B3F3B5100C134F8 /* SEButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SEButton.swift; sourceTree = "<group>"; };
+		DE03A6282B3F3D9300C134F8 /* SETextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SETextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,8 @@
 				DE03A61C2B3F381500C134F8 /* Info.plist */,
 				DE03A6222B3F39E600C134F8 /* SearchVC.swift */,
 				DE03A6242B3F39F800C134F8 /* FavoritesVC.swift */,
+				DE03A6262B3F3B5100C134F8 /* SEButton.swift */,
+				DE03A6282B3F3D9300C134F8 /* SETextField.swift */,
 			);
 			path = Socialends;
 			sourceTree = "<group>";
@@ -143,6 +149,8 @@
 				DE03A6252B3F39F800C134F8 /* FavoritesVC.swift in Sources */,
 				DE03A6232B3F39E600C134F8 /* SearchVC.swift in Sources */,
 				DE03A6132B3F381300C134F8 /* ViewController.swift in Sources */,
+				DE03A6292B3F3D9300C134F8 /* SETextField.swift in Sources */,
+				DE03A6272B3F3B5100C134F8 /* SEButton.swift in Sources */,
 				DE03A60F2B3F381300C134F8 /* AppDelegate.swift in Sources */,
 				DE03A6112B3F381300C134F8 /* SceneDelegate.swift in Sources */,
 			);
