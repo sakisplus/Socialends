@@ -37,9 +37,13 @@ class SearchVC: UIViewController {
     }
     
     @objc func pushFollowersVC() {
+        guard let username = usernameTextField.text, !username.isEmpty else {
+            // TODO: Handle empty username
+            return
+        }
         let followersVC = FollowersListVC()
-        followersVC.username = usernameTextField.text
-        followersVC.title = usernameTextField.text ?? "No user name!"
+        followersVC.username = username
+        followersVC.title = username
         navigationController?.pushViewController(followersVC, animated: true)
     }
     
