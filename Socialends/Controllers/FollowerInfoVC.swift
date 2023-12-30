@@ -16,6 +16,20 @@ class FollowerInfoVC: UIViewController {
         view.backgroundColor = .systemGreen
         let doneButton = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(dismissVC))
         navigationItem.rightBarButtonItem = doneButton
+        loadFollowerInfo()
+    }
+    
+    func loadFollowerInfo() {
+        guard let username = follower?.login else { return }
+        NetworkManager.shared.getFollowerInfo(for: username) { result in
+            switch result {
+            case .failure(let error):
+                print("\(error)")
+                break
+            case .success(let user):
+                print(user)
+            }
+        }
     }
     
     @objc private func dismissVC() {

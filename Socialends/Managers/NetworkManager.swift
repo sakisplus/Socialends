@@ -50,4 +50,40 @@ class NetworkManager {
         
         task.resume()
     }
+    
+    func getFollowerInfo(for username: String, completion: @escaping (Result<User, SEError>) -> Void) {
+        let endpoint = baseURL + "\(username)"
+        print("getFollower from: \(endpoint)")
+        guard let url = URL(string: endpoint) else {
+            completion(.failure(.invalidUsername))
+            return
+        }
+        
+        let task = URLSession.shared.dataTask(with: url) { data, response, error in
+            if let _ = error {
+                completion(.failure(.unableToComplete))
+            }
+            
+            guard let response = response as? HTTPURLResponse, response.statusCode == 200 else {
+                completion(.failure(.invalidResponse))
+                return
+            }
+            
+            guard let data = data else {
+                completion(.failure(.invalidData))
+                return
+            }
+            
+            do {
+                let decoder = JSONDecoder()
+                decoder.keyDecodingStrategy = .convertFromSnakeCase
+                let follower = try decoder.decode(User.self, from: data)
+                completion(.success(follower))
+            } catch {
+                completion(.failure(.invalidData))
+            }
+        }
+        
+        task.resume()
+    }
 }
