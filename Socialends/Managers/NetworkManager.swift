@@ -16,6 +16,7 @@ class NetworkManager {
     
     func getFollowers(for username: String, page: Int, completion: @escaping (Result<[Follower], SEError>) -> Void) {
         let endpoint = baseURL + "\(username)/followers?per_page=100&page=\(page)"
+        print("getFollowers from: \(endpoint)")
         guard let url = URL(string: endpoint) else {
             completion(.failure(.invalidUsername))
             return
@@ -41,6 +42,7 @@ class NetworkManager {
                 decoder.keyDecodingStrategy = .convertFromSnakeCase
                 let followers = try decoder.decode([Follower].self, from: data)
                 completion(.success(followers))
+                print("Retrieved \(followers.count) followers")
             } catch {
                 completion(.failure(.invalidData))
             }
