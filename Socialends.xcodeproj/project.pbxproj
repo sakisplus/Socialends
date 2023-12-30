@@ -28,6 +28,7 @@
 		DE03A6472B3F7B0D00C134F8 /* SEAvatarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE03A6462B3F7B0D00C134F8 /* SEAvatarImageView.swift */; };
 		DE6D53202B401DFC00B7A3A9 /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6D531F2B401DFC00B7A3A9 /* UIHelper.swift */; };
 		DE6D53222B40474800B7A3A9 /* SEEmptyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6D53212B40474800B7A3A9 /* SEEmptyState.swift */; };
+		DE7D62312B40B728001614DA /* FollowerInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7D62302B40B728001614DA /* FollowerInfoVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		DE03A6462B3F7B0D00C134F8 /* SEAvatarImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SEAvatarImageView.swift; sourceTree = "<group>"; };
 		DE6D531F2B401DFC00B7A3A9 /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
 		DE6D53212B40474800B7A3A9 /* SEEmptyState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SEEmptyState.swift; sourceTree = "<group>"; };
+		DE7D62302B40B728001614DA /* FollowerInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerInfoVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				DE03A6222B3F39E600C134F8 /* SearchVC.swift */,
 				DE03A62A2B3F47D100C134F8 /* FollowersListVC.swift */,
 				DE03A6242B3F39F800C134F8 /* FavoritesVC.swift */,
+				DE7D62302B40B728001614DA /* FollowerInfoVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -248,6 +251,7 @@
 				DE03A62B2B3F47D100C134F8 /* FollowersListVC.swift in Sources */,
 				DE03A6302B3F571600C134F8 /* SEBodyLabel.swift in Sources */,
 				DE03A6452B3F7A6300C134F8 /* FollowerCell.swift in Sources */,
+				DE7D62312B40B728001614DA /* FollowerInfoVC.swift in Sources */,
 				DE03A6292B3F3D9300C134F8 /* SETextField.swift in Sources */,
 				DE03A6422B3F74D000C134F8 /* ErrorMessage.swift in Sources */,
 				DE03A6392B3F65C800C134F8 /* Follower.swift in Sources */,
