@@ -9,7 +9,7 @@ import UIKit
 
 class SEAvatarImageView: UIImageView {
     
-    let avatarPlaceholder = UIImage(named: "appstore")!
+    let avatarPlaceholder = UIImage(named: "logo")!
 
     override init(frame: CGRect) {
         super.init(frame: frame)
