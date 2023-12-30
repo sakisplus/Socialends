@@ -42,22 +42,10 @@ class FollowersListVC: UIViewController {
     }
     
     private func configCollectionView() {
-        collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: createColFlowLayout())
+        collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: UIHelper.createThreeColumnFlowLayout(in: view))
         view.addSubview(collectionView)
         collectionView.backgroundColor = .systemBackground
         collectionView.register(FollowerCell.self, forCellWithReuseIdentifier: FollowerCell.reuseID)
-    }
-    
-    private func createColFlowLayout() -> UICollectionViewFlowLayout {
-        let width = view.bounds.width
-        let padding: CGFloat = 12
-        let minItemsSpacing: CGFloat = 10
-        let availableWidth = width - (padding * 2) - (minItemsSpacing * 2)
-        let itemWidth = availableWidth / 3
-        let flowLayout = UICollectionViewFlowLayout()
-        flowLayout.sectionInset = UIEdgeInsets(top: padding, left: padding, bottom: padding, right: padding)
-        flowLayout.itemSize = CGSize(width: itemWidth, height: itemWidth + 40)
-        return flowLayout
     }
     
     private func configDataSource() {
