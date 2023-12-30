@@ -27,7 +27,8 @@ class FollowersListVC: UIViewController {
     
     private func loadFollowers() {
         guard let username = self.username else { return }
-        NetworkManager.shared.getFollowers(for: username, page: 1) { result in
+        NetworkManager.shared.getFollowers(for: username, page: 1) { [weak self] result in
+            guard let self = self else { return }
             switch result {
             case .failure(let error):
                 self.presentSEAlertOnMainThread(title: "Something went wrong", message: error.rawValue, buttonTitle: "OK")
