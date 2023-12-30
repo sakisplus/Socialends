@@ -31,12 +31,10 @@ class SEAvatarImageView: UIImageView {
         
         let cacheKey = NSString(string: urlSting)
         if let image = cache.object(forKey: cacheKey) {
-            print("retreive image from cache")
             self.image = image
             return
         }
         
-        print("downloadImage from \(urlSting)")
         guard let url = URL(string: urlSting) else { return }
         
         let task = URLSession.shared.dataTask(with: url) { [weak self] data, response, error in

@@ -31,8 +31,6 @@ class FollowersListVC: UIViewController {
             case .failure(let error):
                 self.presentSEAlertOnMainThread(title: "Something went wrong", message: error.rawValue, buttonTitle: "OK")
             case .success(let followers):
-                print("followers: \(followers.count)")
-                print(followers)
                 self.followers = followers
                 self.updateData()
             }
