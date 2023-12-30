@@ -50,13 +50,13 @@ class SearchVC: UIViewController {
     func configLogo() {
         view.addSubview(logoImageView)
         logoImageView.translatesAutoresizingMaskIntoConstraints = false
-        logoImageView.image = UIImage(named: "appstore")!
+        logoImageView.image = UIImage(named: "logo")!
         
         NSLayoutConstraint.activate([
             logoImageView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 80),
             logoImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            logoImageView.heightAnchor.constraint(equalToConstant: 200),
-            logoImageView.widthAnchor.constraint(equalToConstant: 200)
+            logoImageView.heightAnchor.constraint(equalToConstant: 300),
+            logoImageView.widthAnchor.constraint(equalToConstant: 300)
         ])
     }
     

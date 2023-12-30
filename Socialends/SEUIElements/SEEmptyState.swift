@@ -45,8 +45,8 @@ class SEEmptyState: UIView {
             
             imageView.widthAnchor.constraint(equalTo: widthAnchor, multiplier: 1.3),
             imageView.heightAnchor.constraint(equalTo: widthAnchor, multiplier: 1.3),
-            imageView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: 200),
-            imageView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: 140)
+            imageView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: 205),
+            imageView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: 55)
         ])
     }
 }
