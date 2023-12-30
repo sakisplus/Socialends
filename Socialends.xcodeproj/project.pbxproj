@@ -26,6 +26,7 @@
 		DE03A6422B3F74D000C134F8 /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE03A6412B3F74D000C134F8 /* ErrorMessage.swift */; };
 		DE03A6452B3F7A6300C134F8 /* FollowerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE03A6442B3F7A6300C134F8 /* FollowerCell.swift */; };
 		DE03A6472B3F7B0D00C134F8 /* SEAvatarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE03A6462B3F7B0D00C134F8 /* SEAvatarImageView.swift */; };
+		DE6D53202B401DFC00B7A3A9 /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6D531F2B401DFC00B7A3A9 /* UIHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		DE03A6412B3F74D000C134F8 /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
 		DE03A6442B3F7A6300C134F8 /* FollowerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerCell.swift; sourceTree = "<group>"; };
 		DE03A6462B3F7B0D00C134F8 /* SEAvatarImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SEAvatarImageView.swift; sourceTree = "<group>"; };
+		DE6D531F2B401DFC00B7A3A9 /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				DE03A6412B3F74D000C134F8 /* ErrorMessage.swift */,
+				DE6D531F2B401DFC00B7A3A9 /* UIHelper.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -237,6 +240,7 @@
 				DE03A6232B3F39E600C134F8 /* SearchVC.swift in Sources */,
 				DE03A6342B3F5F2E00C134F8 /* UIViewController+Ext.swift in Sources */,
 				DE03A6322B3F57EE00C134F8 /* SEAlertVC.swift in Sources */,
+				DE6D53202B401DFC00B7A3A9 /* UIHelper.swift in Sources */,
 				DE03A62B2B3F47D100C134F8 /* FollowersListVC.swift in Sources */,
 				DE03A6302B3F571600C134F8 /* SEBodyLabel.swift in Sources */,
 				DE03A6452B3F7A6300C134F8 /* FollowerCell.swift in Sources */,

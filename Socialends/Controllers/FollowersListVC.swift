@@ -9,9 +9,7 @@ import UIKit
 
 class FollowersListVC: UIViewController {
     
-    enum Section {
-        case main
-    }
+    enum Section { case main }
     
     var username: String?
     var followers: [Follower] = []
@@ -60,8 +58,6 @@ class FollowersListVC: UIViewController {
         var snapshot = NSDiffableDataSourceSnapshot<Section, Follower>()
         snapshot.appendSections([.main])
         snapshot.appendItems(followers)
-        DispatchQueue.main.async {
-            self.dataSource.apply(snapshot, animatingDifferences: true)
-        }
+        DispatchQueue.main.async { self.dataSource.apply(snapshot, animatingDifferences: true) }
     }
 }
